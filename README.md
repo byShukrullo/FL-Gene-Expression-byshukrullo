@@ -57,7 +57,7 @@ flake8>=3.9.0
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/federated-gene-expression.git
+git clone https://github.com/byShukrullo/FL-Gene-Expression-byshukrullo.git
 cd federated-gene-expression
 
 # Run automated setup
@@ -71,7 +71,7 @@ python main.py
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/your-username/federated-gene-expression.git
+git clone https://github.com/byShukrullo/FL-Gene-Expression-byshukrullo.git
 cd federated-gene-expression
 
 # 2. Create virtual environment
@@ -162,7 +162,7 @@ federated-gene-expression/
 ### Step 1: Clone Repository
 
 ```bash
-git clone https://github.com/your-username/federated-gene-expression.git
+git clone https://github.com/byShukrullo/FL-Gene-Expression-byshukrullo.git
 cd federated-gene-expression
 ```
 
@@ -218,7 +218,7 @@ cp config/config_template.yaml config/config.yaml
 nano config/config.yaml
 ```
 
-## 🎮 Usage Examples
+##  Usage Examples
 
 ### Basic Usage
 
@@ -314,7 +314,7 @@ data:
   data_split_ratio: [0.6, 0.2, 0.2]  # train/val/test
 ```
 
-## 🐳 Docker Deployment
+##  Docker Deployment
 
 ### Build Image
 ```bash
@@ -457,21 +457,10 @@ python main.py --debug
 python -m memory_profiler main.py
 ```
 
-### Support
-
-- 📧 **Email**: your-email@domain.com
-- 💬 **Discord**: [Join our community](https://discord.gg/your-invite)
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/your-username/federated-gene-expression/issues)
-- 📚 **Documentation**: [Wiki](https://github.com/your-username/federated-gene-expression/wiki)
-
-## 🤝 Contributing
-
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
 ### Development Setup
 ```bash
 # Clone your fork
-git clone https://github.com/your-username/federated-gene-expression.git
+git clone https://github.com/byShukrullo/FL-Gene-Expression-byshukrullo.git
 cd federated-gene-expression
 
 # Install development dependencies
@@ -495,26 +484,6 @@ python -m pytest tests/
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📝 Citation
-
-If you use this project in your research, please cite:
-
-```bibtex
-@software{federated_gene_expression,
-  title={Federated Learning for Streaming Gene Expression Analysis},
-  author={Your Name},
-  year={2024},
-  url={https://github.com/your-username/federated-gene-expression},
-  version={1.0.0}
-}
-```
-
-## 🙏 Acknowledgments
-
-- PyTorch team for the deep learning framework
-- Scikit-learn for machine learning utilities
-- Federal learning research community
-- Genomics and bioinformatics community
 
 ## 📈 Roadmap
 
