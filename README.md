@@ -9,13 +9,13 @@ A privacy-preserving federated learning framework for collaborative gene express
 
 ## 🌟 Features
 
-- **🔒 Privacy-Preserving**: No raw genomic data leaves individual institutions
-- **🏥 Multi-Hospital Collaboration**: Train models across multiple healthcare centers
-- **📊 Streaming Data Processing**: Real-time gene expression analysis
-- **🧬 Genomics-Focused**: Specialized for gene expression classification
-- **📈 Real-time Monitoring**: Live training progress and performance metrics
-- **🔄 Federated Averaging**: State-of-the-art FedAvg algorithm implementation
-- **🎯 Disease Classification**: Healthy vs Disease gene expression patterns
+- ** Privacy-Preserving**: No raw genomic data leaves individual institutions
+- ** Multi-Hospital Collaboration**: Train models across multiple healthcare centers
+- ** Streaming Data Processing**: Real-time gene expression analysis
+- ** Genomics-Focused**: Specialized for gene expression classification
+- ** Real-time Monitoring**: Live training progress and performance metrics
+- ** Federated Averaging**: State-of-the-art FedAvg algorithm implementation
+- ** Disease Classification**: Healthy vs Disease gene expression patterns
 
 ## 📋 Requirements
 
