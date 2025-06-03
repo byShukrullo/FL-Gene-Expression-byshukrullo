@@ -1,0 +1,71 @@
+version: '3.8'
+
+services:
+  federated-server:
+    build: .
+    container_name: federated-server
+    ports:
+      - "8000:8000"
+      - "8888:8888"
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+      - ./logs:/app/logs
+    environment:
+      - PYTHONPATH=/app
+      - LOG_LEVEL=INFO
+      - DEVICE=cpu
+    networks:
+      - federated-network
+    restart: unless-stopped
+
+  federated-client-1:
+    build: .
+    container_name: federated-client-1
+    depends_on:
+      - federated-server
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+    environment:
+      - CLIENT_ID=1
+      - SERVER_URL=http://federated-server:8000
+      - PYTHONPATH=/app
+    networks:
+      - federated-network
+    restart: unless-stopped
+
+  federated-client-2:
+    build: .
+    container_name: federated-client-2
+    depends_on:
+      - federated-server
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+    environment:
+      - CLIENT_ID=2
+      - SERVER_URL=http://federated-server:8000
+      - PYTHONPATH=/app
+    networks:
+      - federated-network
+    restart: unless-stopped
+
+  jupyter:
+    build: .
+    container_name: federated-jupyter
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks:/app/notebooks
+      - ./data:/app/data
+      - ./results:/app/results
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    command: jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root
+    networks:
+      - federated-network
+
+networks:
+  federated-network:
+    driver: bridge
